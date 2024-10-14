@@ -18,7 +18,9 @@ public class enemyai : MonoBehaviour
     bool isAggro = false;
     bool attackState = false;
     bool chasePlayer = false;
-    
+    bool isAttacking = false;
+
+    public Animation anim;
 
     void Start()
     {
@@ -45,7 +47,16 @@ public class enemyai : MonoBehaviour
             nMA.SetDestination(target.transform.position);
         }
 
+        if (distanceToPlayer <= attackRange)
+        {
+            isAttacking = true;
+        }
         
+
+        if (isAttacking = true)
+        {
+           // Play AttackTest
+        }
     }
 
     void RotateToPlayer()
@@ -61,4 +72,7 @@ public class enemyai : MonoBehaviour
     {
         isAggro = true;
     }
+
+
+
 }
