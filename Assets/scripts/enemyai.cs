@@ -56,4 +56,9 @@ public class enemyai : MonoBehaviour
 
         Quaternion.Lerp(currentRotation, desiredRotation, Time.deltaTime * turnSpeed);
     }
+
+    public void OnDamageTaken()
+    {
+        isAggro = true;
+    }
 }
