@@ -10,8 +10,7 @@ public class playerhealth : MonoBehaviour
 
     public void Damaged(float damage)
     {
-        GetComponent<enemyattack>().
-
+       
         playerHealthPoints -= damage;
         if (playerHealthPoints <= 0)
         {

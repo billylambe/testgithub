@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void Damaged(float damage)
     {
-        GetComponent<enemyai>().
+       
         
         healthPoints -= damage;
         if (healthPoints <= 0)

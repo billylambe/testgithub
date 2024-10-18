@@ -360,6 +360,25 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 49858ecb46223404b8475b34c72be073, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+--- !u!1 &285919410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942,
+    type: 3}
+  m_PrefabInstance: {fileID: 903382512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &285919412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285919410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d764f983b3d9f4141b23dfd0c43bd669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealthPoints: 30
 --- !u!1001 &333095671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,6 +950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ded85213c6ef5478e317aa895baf4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTarget: {fileID: 285919412}
+  playerdamage: 5
 --- !u!95 &1021333299
 Animator:
   serializedVersion: 3
@@ -950,6 +971,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1021333300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021333297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9baf668a050c394bacc83e6878c0bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoints: 30
 --- !u!4 &1021333302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5188150295046900288, guid: be445036e759a30409a3731acc9bfe77,
@@ -969,6 +1003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1368041326}
+  anim: {fileID: 0}
 --- !u!1 &1182817619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9,
